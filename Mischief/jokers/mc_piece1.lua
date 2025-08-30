@@ -24,7 +24,7 @@ local jokerInfo = {
         return (G.GAME.pool_flags.tjr_mischief_active and (G.GAME.pool_flags.tjr_mischief_pieces or 0) == 0)
     end,
     add_to_deck = function(self, card, from_debuff)
-        play_sound('clown_laugh_short')
+        play_sound('tjr_clown_laugh_short')
         TJR.funcs.fakemessage(localize('k_mischief_piece_add'), card, G.C.RED)
         SMODS.destroy_cards(card)
     end,
