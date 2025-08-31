@@ -2,7 +2,7 @@ local enhancementInfo = {
     key = 'infected',
     pos = {x = 0, y = 0},
     atlas = 'ThemedJokersRetriggered_enhancements',
-    config = {x_mult=2, bonus=5, hold_x_chips=2, hold_negative_x_chips=0.90, contaigon=false },
+    config = {x_mult=1, bonus=5, hold_x_chips=2, hold_negative_x_chips=0.90, contaigon=false },
     replace_base_card = true,
     no_rank = true,
     no_suit = true,
