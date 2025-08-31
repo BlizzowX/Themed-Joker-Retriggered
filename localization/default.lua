@@ -12,7 +12,13 @@ return {
                 text = {
                     "JU DEBUG"
                 }                               
-            }  
+            },
+            b_tjr_in_debug={
+                name = "DEBUG",
+                text = {
+                    "IN DEBUG"
+                }                               
+            }
         },
         Enhanced={
             m_tjr_infected={
@@ -313,13 +319,16 @@ return {
                 text = {
                     "Gives {X:mult,C:white}X#1#{} Mult",
                     "for each collected {C:attention}Piece of The Mischievous One{}",
-                    "{C:inactive}(#1#/4){}"
+                    "{C:inactive}(Currently {X:mult,C:white}X#2#{} Mult){}"
                 }
             },
             j_tjr_mc_jimbo={
                 name = "Jimbo, the Mischievous One",
                 text = {
-                  "No Idea yet"
+                  "Gives {X:mult,C:white}X#1#{} Mult.",
+                  "Played cards either permanently gain",
+                  "{C:chips}+#2#{} Chips, {C:mult}+#3#{} Mult,",
+                  "{C:money}$#4#{} or nothing when scored."
                 }
             }
         },
