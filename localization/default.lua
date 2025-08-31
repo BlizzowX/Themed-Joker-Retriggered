@@ -49,6 +49,16 @@ return {
                 }
             }
         },
+        Tarot={
+            c_tjr_in_blight={
+                name = "Infected - Blight",
+                text = {
+                    "Creates a random {C:green}Infected{} {C:attention}Joker{}",
+                    "{C:inactive}(Must have room){}"
+
+                }
+            }
+        },
         Joker={
             j_tjr_ca_soldier={
                 name = "Combat Ace - Soldier",

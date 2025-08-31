@@ -43,6 +43,7 @@ local themeItems = {
         },
         Consumable = {
             'in_miasma',
+            'in_blight',
         },
         Pokerhand = {
             'patient_zero',

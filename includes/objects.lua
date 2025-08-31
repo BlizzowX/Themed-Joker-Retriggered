@@ -23,6 +23,12 @@ SMODS.ObjectType({
 })
 
 SMODS.ObjectType({
+    key = "tjr_pool_infected",
+    default = "j_tjr_in_joker",
+    cards = {    },
+})
+
+SMODS.ObjectType({
     key = "tjr_pool_mischief",
     default = "j_tjr_mc_cultist",
     cards = {    },

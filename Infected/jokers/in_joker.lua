@@ -7,6 +7,7 @@ local jokerInfo = {
     unlocked = true,
     discovered = true,
     blueprint_compat = true,
+    pools = { ['tjr_pool_infected'] = true},
     config = {},
     loc_vars = function(self, info_queue, card)
         return { vars = {} }

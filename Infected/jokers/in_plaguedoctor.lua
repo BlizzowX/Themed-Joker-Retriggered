@@ -7,6 +7,7 @@ local jokerInfo = {
     unlocked = true,
     discovered = true,
     blueprint_compat = true,
+    pools = { ['tjr_pool_infected'] = true},
     config = { extra = { xmult=1, xmult_per_infected = 0.2, xmult_total=1 } },
     in_pool = function(self, args)
         for _, playing_card in ipairs(G.playing_cards or {}) do
