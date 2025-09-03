@@ -15,6 +15,9 @@ local blindInfo = {
             end
         end
         return false
+    end,
+    set_badges = function(self, card, badges)
+        badges[#badges+1] = create_badge(localize('k_badge_ca'), G.C.GREEN, G.C.WHITE, 1)
     end
 }
 return blindInfo

@@ -8,6 +8,7 @@ local jokerInfo = {
     discovered = true,
     blueprint_compat = true,
     config = {extra = {money= 1}},
+    pools = { ['tjr_pool_jurassic'] = true},
     loc_vars = function(self, info_queue, card)
         info_queue[#info_queue+1] = G.P_CENTERS.m_stone
         local money_tally = 0
@@ -32,6 +33,9 @@ local jokerInfo = {
             if SMODS.has_enhancement(playing_card, 'm_stone') then money_tally = money_tally + 1 end
         end
         return money_tally > 0 and card.ability.extra.money * money_tally or nil
+    end,
+    set_badges = function(self, card, badges)
+        badges[#badges+1] = create_badge(localize('k_badge_jurassic'), G.C.BROWN, G.C.WHITE, 1)
     end
 }
 return jokerInfo

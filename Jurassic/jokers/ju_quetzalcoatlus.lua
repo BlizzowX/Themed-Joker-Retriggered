@@ -7,7 +7,7 @@ local jokerInfo = {
     unlocked = true,
     discovered = true,
     blueprint_compat = true,
-    pools = { ['tjr_pool_dinosaur'] = true, ['tjr_pool_dinosauregg'] = true },
+    pools = { ['tjr_pool_dinosaur'] = true, ['tjr_pool_dinosauregg'] = true, ['tjr_pool_jurassic'] = true },
     config = { extra = { odds = 12, repetitions = 1 } },
     in_pool = function(self, args) 
         if G.GAME.pool_flags.tjr_quetz_extinct then
@@ -60,6 +60,9 @@ local jokerInfo = {
                 }
             end
         end
-    end    
+    end,
+    set_badges = function(self, card, badges)
+        badges[#badges+1] = create_badge(localize('k_badge_jurassic'), G.C.GREEN, G.C.WHITE, 1)
+    end
 }
 return jokerInfo

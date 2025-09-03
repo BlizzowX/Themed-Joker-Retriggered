@@ -8,7 +8,7 @@ local jokerInfo = {
     discovered = true,
     blueprint_compat = true,
     config = { extra = { odds = 12, mult = 8 } },
-    pools = { ['tjr_pool_dinosaur'] = true, ['tjr_pool_dinosauregg'] = true },
+    pools = { ['tjr_pool_dinosaur'] = true, ['tjr_pool_dinosauregg'] = true, ['tjr_pool_jurassic'] = true },
     in_pool = function(self, args) 
         if G.GAME.pool_flags.tjr_brachio_extinct then
             return false
@@ -59,20 +59,23 @@ local jokerInfo = {
             end
         end
         
-        if context.joker_main then
-            -- Calculate mult for Jacks and Stone Cards in deck
-            local jacks_and_stones = 0
-            for _, playing_card in ipairs(G.playing_cards) do
-                if playing_card:get_id() == 11 or SMODS.has_enhancement(playing_card, 'm_stone') then
-                    jacks_and_stones = jacks_and_stones + 1                    
-                end
-            end
-            if jacks_and_stones > 0 then            
-                return {
-                    mult = card.ability.extra.mult*jacks_and_stones
-                }
-            end
-        end
-    end    
-}
-return jokerInfo
+                 if context.joker_main then
+             -- Calculate mult for Jacks and Stone Cards in deck
+             local jacks_and_stones = 0
+             for _, playing_card in ipairs(G.playing_cards) do
+                 if playing_card:get_id() == 11 or SMODS.has_enhancement(playing_card, 'm_stone') then
+                     jacks_and_stones = jacks_and_stones + 1                    
+                 end
+             end
+             if jacks_and_stones > 0 then            
+                 return {
+                     mult = card.ability.extra.mult*jacks_and_stones
+                 }
+             end
+         end
+     end,
+     set_badges = function(self, card, badges)
+         badges[#badges+1] = create_badge(localize('k_badge_jurassic'), G.C.GREEN, G.C.WHITE, 1)
+     end
+ }
+ return jokerInfo

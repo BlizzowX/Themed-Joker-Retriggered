@@ -8,6 +8,7 @@ local jokerInfo = {
     discovered = true,
     blueprint_compat = true,
     config = {extra = {odds = 10}},
+    pools = { ['tjr_pool_combat_ace'] = true},
     loc_vars = function(self, info_queue, card)
         local numerator, denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'tjr_recruiter' .. G.GAME.round_resets.ante)
         return { vars = { numerator, denominator } }
@@ -19,6 +20,9 @@ local jokerInfo = {
                 TJR.funcs.fakemessage(localize('k_recruiter_success'), card, G.C.ATTENTION)                
              end
          end
+    end,
+    set_badges = function(self, card, badges)
+        badges[#badges+1] = create_badge(localize('k_badge_ca'), G.C.GREEN, G.C.WHITE, 1)
     end
 }
 return jokerInfo

@@ -1,22 +1,30 @@
 return {
     descriptions={
         Back={
-            b_tjr_ca_debug={
-                name = "DEBUG",
+            b_tjr_ca_battlefield={
+                name = "Combat Ace Deck",
                 text = {
-                    "CA DEBUG"
+                    "Join the {C:attention}Combat Aces{}",
+                    "on the battlefield.",
+                    "Start with {C:attention}The Contract{}",
+                    "and {C:attention}Recruiter{}"
                 }                               
             },
-            b_tjr_ju_debug={
-                name = "DEBUG",
+            b_tjr_ju_fossil={
+                name = "Jurassic Deck",
                 text = {
-                    "JU DEBUG"
+                    "Jurassic Dinosaurs rise again.",
+                    "Start with {C:attention}The Amber{}",
+                    "and an{C:attention} Dinosaur Egg{}."
                 }                               
             },
-            b_tjr_in_debug={
-                name = "DEBUG",
+            b_tjr_in_outbreak={
+                name = "Infected Deck",
                 text = {
-                    "IN DEBUG"
+                    "The {C:attention}Infected{}",
+                    "are on the loose.",
+                    "Start with a {C:green}The Blight{}",
+                    "and {C:green}Mutation{}."
                 }                               
             }
         },
@@ -43,17 +51,47 @@ return {
         },
         Spectral={
             c_tjr_in_miasma={
-                name = "Infected - Miasma",
+                name = "Miasma",
                 text = {
                     "Spreads {C:green}Infection{} to 5 random cards in deck."
+                }
+            },
+            c_tjr_ju_extinction={
+                name = "Extinction",
+                text = {
+                    "Turn one {C:attention}Jurassic Dinosaur{} into its {C:attention}Fossil{}"
                 }
             }
         },
         Tarot={
             c_tjr_in_blight={
-                name = "Infected - Blight",
+                name = "The Blight",
                 text = {
                     "Creates a random {C:green}Infected{} {C:attention}Joker{}",
+                    "{C:inactive}(Must have room){}"
+
+                }
+            },
+            c_tjr_ca_contract={
+                name = "The Contract",
+                text = {
+                    "Creates a random {C:attention}Combat Ace{} {C:attention}Joker{}",
+                    "{C:inactive}(Must have room){}"
+
+                }
+            },
+            c_tjr_ju_amber={
+                name = "The Amber",
+                text = {
+                    "Creates a random {C:attention}Jurassic{} {C:attention}Joker{}",
+                    "{C:inactive}(Must have room){}"
+
+                }
+            },
+            c_tjr_mc_mischief={
+                name = "The Mischief",
+                text = {
+                    "Creates a random {C:attention}Mischief{} {C:attention}Joker{}",
                     "{C:inactive}(Must have room){}"
 
                 }
@@ -61,7 +99,7 @@ return {
         },
         Joker={
             j_tjr_ca_soldier={
-                name = "Combat Ace - Soldier",
+                name = "Soldier",
                 text = {
                     "Played {C:attention}Aces{} each",			
                     "give {C:chips}+#1#{} Chips",
@@ -69,7 +107,7 @@ return {
                 }                               
             },
             j_tjr_ca_supplies={
-                name = "Combat Ace - Supplies",
+                name = "Supplies",
                 text = {
                     "For every {C:red}3 discarded{} ",			
                     "{C:attention}Aces{} get {C:money}$#1#{}.",
@@ -78,7 +116,7 @@ return {
                 }                  
             },
             j_tjr_ca_mercenary={
-                name = "Combat Ace - Mercenary",
+                name = "Mercenary",
                 text = {
                     "Played {C:attention}Aces{} each give",
                     "{X:mult,C:white} X#1# {} Mult. At the",
@@ -87,7 +125,7 @@ return {
                 }    
             },
             j_tjr_ca_promotion={
-                name = "Comat Ace - Promotion",
+                name = "Promotion",
                 text = {
                     "Played {C:attention}Aces{} have a",
                     "{C:green}#1# in #2#{} chance to",
@@ -95,7 +133,7 @@ return {
                 }    
             },
             j_tjr_ca_recruiter={
-                name = "Combat Ace - Recruiter",
+                name = "Recruiter",
                 text = {
                     "{C:red}Discarded cards{} have a",
                     "{C:green}#1# in #2#{} chance to",
@@ -103,7 +141,7 @@ return {
                 }    
             },
             j_tjr_ca_general={
-                name = "Combat Ace - General",
+                name = "General",
                 text = {
                     "{X:mult,C:white} X#1# {} Mult for each",
                     "remaining {C:attention}Ace{} in Deck",
@@ -111,7 +149,7 @@ return {
                 }    
             },
             j_tjr_ca_veteran={
-                name = "Combat Ace - Veteran",
+                name = "Veteran",
                 text = {
                     "Each {C:attention}Ace{}",
                     "held in hand",
@@ -119,7 +157,7 @@ return {
                 }    
             },
             j_tjr_ju_quetzalcoatlus={
-                name = "Jurassic - Quetzalcoatlus",
+                name = "Quetzalcoatlus",
                 text = {
                     "Retrigger each played",
                     "{C:attention}Ace{} and {C:attention}Stone Card{}.",
@@ -128,7 +166,7 @@ return {
                 }                               
             },
             j_tjr_ju_trex={
-                name = "Jurassic - T-Rex",
+                name = "T-Rex",
                 text = {
                     "Every played {C:attention}King{}",
                     "and {C:attention}Stone Card{} permanently",
@@ -139,7 +177,7 @@ return {
                 }                               
             },
             j_tjr_ju_mosasaurus={
-                name = "Jurassic - Mosasaurus",
+                name = "Mosasaurus",
                 text = {
                     "This Joker gains {C:chips}+#1#{} Chips",
                     "for every scored {C:attention}Queen{}",
@@ -150,7 +188,7 @@ return {
                 }                               
             },
             j_tjr_ju_brachiosaurus={
-                name = "Jurassic - Brachiosaurus",
+                name = "Brachiosaurus",
                 text = {
                     "Gives {C:mult}#1#{} Mult for each {C:attention}Jack{} and",
                     "{C:attention}Stone Card{} in your full deck.",
@@ -160,42 +198,42 @@ return {
                 }                               
             },
             j_tjr_ju_fossil_quetz={
-                name = "Jurassic - Fossil",
+                name = "Fossil",
                 text = {
                     "Played {C:attention}Aces{} and {C:attention}Stone Cards{}",
                     "each give {X:mult,C:white} X#1# {} Mult when scored"
                 }                               
             },
             j_tjr_ju_fossil_rex={
-                name = "Jurassic - Fossil",
+                name = "Fossil",
                 text = {
                     "Played {C:attention}Kings{} and {C:attention}Stone Cards{}",
                     "each give {X:mult,C:white} X#1# {} Mult when scored"
                 }                               
             },
             j_tjr_ju_fossil_mosa={
-                name = "Jurassic - Fossil",
+                name = "Fossil",
                 text = {
                     "Played {C:attention}Queens{} and {C:attention}Stone Cards{}",
                     "each give {X:mult,C:white} X#1# {} Mult when scored"
                 }                               
             },
             j_tjr_ju_fossil_brachio={
-                name = "Jurassic - Fossil",
+                name = "Fossil",
                 text = {
                     "Played {C:attention}Jacks{} and {C:attention}Stone Cards{}",
                     "each give {X:mult,C:white} X#1# {} Mult when scored"
                 }                               
             },
             j_tjr_ju_paleontologist={
-                name = "Jurassic - Paleontologist",
+                name = "Paleontologist",
                 text = {
                     "{C:attention}Stone Card{} held",
                     "in Hand gives {X:mult,C:white} X#1# {} Mult"
                 }                               
             },
             j_tjr_ju_excavation={
-                name = "Jurassic - Excavation",
+                name = "Excavation",
                 text = {
                     "If first hand of round has",
                     "no {C:attention}Stone Cards{}, all played cards",
@@ -203,7 +241,7 @@ return {
                 }                               
             },
             j_tjr_ju_museum={
-                name = "Jurassic - Museum",
+                name = "Museum",
                 text = {
                     "Earn {C:money}$#1#{} for each {C:attention}Stone Card{}",
                     "in your full deck at the end of round",
@@ -211,7 +249,7 @@ return {
                 }                               
             },
             j_tjr_ju_dinosauregg = {
-                name = "Jurassic - Dinosaur Egg",
+                name = "Dinosaur Egg",
                 text = {
                     "After {C:attention}#1#{} rounds,",
                     "hatches into a random {C:attention}Dinosaur{}",
@@ -220,14 +258,14 @@ return {
                 }
             },
             j_tjr_ju_fossil_egg = {
-                name = "Jurassic - Fossilized Egg",
+                name = "Fossilized Egg",
                 text = {
                     "Played {C:attention}Stone Cards{}",
                     "each give {C:money}$#1#{} when scored."
                 }
             },
             j_tjr_in_mutation={
-                name = "Infected - Mutation",
+                name = "Mutation",
                 text = {
                     "{C:green}Infected Cards{}",
                     "give {X:mult,C:white}X#1#{} Mult",
@@ -235,14 +273,14 @@ return {
                 }
             },
             j_tjr_in_potency={
-                name = "Infected - Potency",
+                name = "Potency",
                 text = {
                     "Upgrades level of played",
                     "{C:green}Infected Poker Hand{}",
                 }
             },
             j_tjr_in_joker={
-                name = "Infected - Joker",
+                name = "Infected Joker",
                 text = {
                     "Spreads {C:green}Infection{}",
                     "to a random card in deck",
@@ -250,21 +288,21 @@ return {
                 }
             },
             j_tjr_in_contaigon={
-                name = "Infected - Contagion",
+                name = "Contagion",
                 text = {
                     "{C:green}Infection{} also spreads",
                     "{C:attention}Seals{} and {C:attention}Editions",
                 }
             },
             j_tjr_in_swarm={
-                name = "Infected - Swarm",
+                name = "Swarm",
                 text = {
                     "Retrigger all",
                     "{C:green}Infected Cards{}"
                 }
             },
             j_tjr_in_plaguedoctor={
-                name = "Infected - Plague Doctor",
+                name = "Plague Doctor",
                 text = {
                     "Gives {X:mult,C:white}X#1#{} Mult.",
                     "for each {C:green}Infected Card{}",
@@ -273,7 +311,7 @@ return {
                 }
             },
             j_tjr_in_corruptedjoker={
-                name = "Infected - Corrupted Joker",
+                name = "Corrupted Joker",
                 text = {
                     "Played {C:green}Infected Cards{}",
                     "give {C:mult}+#1#{} Mult",
@@ -281,7 +319,7 @@ return {
                 }
             },
             j_tjr_in_superspreadder={
-                name = "Infected - Super Spreader",
+                name = "Super Spreader",
                 text = {
                    "Played {C:green}Infected Cards{}",
                    "have a {C:green}#1# in #2#{} chance to",
@@ -289,7 +327,7 @@ return {
                 }
             },
             j_tjr_in_pulcinella={
-                name = "Infected - Pulcinella",
+                name = "Pulcinella",
                 text = {
                     "When you play an {C:green}Infected Poker Hand{},",
                     "retrigger it once for each",
@@ -362,35 +400,35 @@ return {
         },
         Other={
             tt_dinosauregg_fossil = {
-                name = "Jurassic - Fossilized Egg",
+                name = "Fossilized Egg",
                 text = {
                     "Earn {C:money}Money{} for each",
                     "scored {C:attention}Stone Card{}"
                 }
             },
             tt_trex = {
-                name = "Jurassic - T-Rex",
+                name = "T-Rex",
                 text = {
                     "{C:attention}Kings{} and {C:attention}Stone Cards{} gain",
                     "permanent {C:chips}Chips{} and {C:mult}Mult{}"
                 }
             },
             tt_mosasaurus = {
-                name = "Jurassic - Mosasaurus",
+                name = "Mosasaurus",
                 text = {
                     "Gains {C:chips}Chips{} for {C:attention}Queens{} and",
                     "{C:attention}Stone Cards{} when scored"
                 }
             },
             tt_brachiosaurus = {
-                name = "Jurassic - Brachiosaurus",
+                name = "Brachiosaurus",
                 text = {
                     "{C:mult}Mult{} for {C:attention}Jacks{} and {C:attention}Stone Cards{}",
                     "in your deck"
                 }
             },
             tt_quetzalcoatlus = {
-                name = "Jurassic - Quetzalcoatlus",
+                name = "Quetzalcoatlus",
                 text = {
                     "Retriggers {C:attention}Aces{} and {C:attention}Stone Cards{}",
                     "when scored"
@@ -421,6 +459,10 @@ return {
     },
     misc={
         dictionary = {
+                    k_badge_ca = "Combat Ace",
+        k_badge_infected = "Infected",
+        k_badge_jurassic = "Jurassic",
+        k_badge_mischief = "Mischief",
             k_supplies_up = "+ Supplies!",
             k_supplydrop = "Supply drop!",
             k_mercenary_destroy = "Ciao!",

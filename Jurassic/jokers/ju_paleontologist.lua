@@ -8,6 +8,7 @@ local jokerInfo = {
     discovered = true,
     blueprint_compat = true,
     config = {extra = {xmult = 1.5}},
+    pools = { ['tjr_pool_jurassic'] = true},
     loc_vars = function(self, info_queue, card)
         info_queue[#info_queue+1] = G.P_CENTERS.m_stone
         return { vars = { card.ability.extra.xmult } }
@@ -27,12 +28,15 @@ local jokerInfo = {
                     message = localize('k_debuffed'),
                     colour = G.C.RED
                 }
-            else
-                return {
-                    xmult = card.ability.extra.xmult
-                }
-            end
-        end
-    end
-}
-return jokerInfo
+                         else
+                 return {
+                     xmult = card.ability.extra.xmult
+                 }
+             end
+         end
+     end,
+     set_badges = function(self, card, badges)
+         badges[#badges+1] = create_badge(localize('k_badge_jurassic'), G.C.GREEN, G.C.WHITE, 1)
+     end
+ }
+ return jokerInfo

@@ -2,10 +2,13 @@
 local themeItems = {
     ["Combat Ace"] = {
         Back = {
-            'ca_debug',
+            'ca_battlefield',
         },
         Blind = {
             'ca_desertation',
+        },
+        Consumable = {
+            'ca_contract',
         },
         Joker = {
             'ca_soldier',
@@ -19,7 +22,11 @@ local themeItems = {
     },
     ["Jurassic"] = {
         Back = {
-            'ju_debug',
+            'ju_fossil',
+        },
+        Consumable = {
+            'ju_amber',
+            'ju_extinction',
         },
         Joker = {
             'ju_quetzalcoatlus',
@@ -64,10 +71,13 @@ local themeItems = {
             'in_pulcinella',
         },
         Back = {
-            'in_debug',
+            'in_outbreak',
         },
     },
     ["Mischief"] = {
+        Consumable = {
+            'mc_mischief',
+        },
         Joker = {
             'mc_piece1',
             'mc_piece2',

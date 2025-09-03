@@ -42,6 +42,9 @@ local jokerInfo = {
             card.ability.extra.xmult_total = 1 + (infected_count * card.ability.extra.xmult_per_infected)
             return {xmult=card.ability.extra.xmult_total}
         end
+    end,
+    set_badges = function(self, card, badges)
+        badges[#badges+1] = create_badge(localize('k_badge_infected'), G.C.GREEN, G.C.RED, 1)
     end
 }
 return jokerInfo

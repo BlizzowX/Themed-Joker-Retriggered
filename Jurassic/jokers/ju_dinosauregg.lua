@@ -8,6 +8,7 @@ local jokerInfo = {
     discovered = true,
     blueprint_compat = false,
     config = { extra = {hatchtime = 3, rounds=0 } },
+    pools = { ['tjr_pool_jurassic'] = true},
     loc_vars = function(self, info_queue, card)
         info_queue[#info_queue+1] = {key = "tt_trex", set = "Other"}
         info_queue[#info_queue+1] = {key = "tt_mosasaurus", set = "Other"}
@@ -19,14 +20,17 @@ local jokerInfo = {
     end,
     calculate = function(self, card, context)      
      
-        if context.end_of_round and context.game_over == false and context.main_eval and not context.blueprint then
-            card.ability.extra.rounds = card.ability.extra.rounds + 1
-            if card.ability.extra.rounds >= card.ability.extra.hatchtime then
-                TJR.funcs.fakemessage(localize('k_dinosauregg_hatch'), card, G.C.YELLOW)
-                SMODS.destroy_cards(card)    
-                SMODS.add_card({set='tjr_pool_dinosauregg'})
-            end
-        end
-    end    
-}
-return jokerInfo
+                 if context.end_of_round and context.game_over == false and context.main_eval and not context.blueprint then
+             card.ability.extra.rounds = card.ability.extra.rounds + 1
+             if card.ability.extra.rounds >= card.ability.extra.hatchtime then
+                 TJR.funcs.fakemessage(localize('k_dinosauregg_hatch'), card, G.C.YELLOW)
+                 SMODS.destroy_cards(card)    
+                 SMODS.add_card({set='tjr_pool_dinosauregg'})
+             end
+         end
+     end,
+     set_badges = function(self, card, badges)
+         badges[#badges+1] = create_badge(localize('k_badge_jurassic'), G.C.GREEN, G.C.WHITE, 1)
+     end
+ }
+ return jokerInfo

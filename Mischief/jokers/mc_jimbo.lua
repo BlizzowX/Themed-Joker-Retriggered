@@ -13,7 +13,7 @@ local jokerInfo = {
         card:set_edition("e_negative", true)
     end,
     loc_vars = function(self, info_queue, card)      
-        return { vars = { card.ability.extra.mult, card.ability.extra.chips_bonus, card.ability.extra.mult_bonus, card.ability.extra.dollar_bonus } }
+        return { vars = { card.ability.extra.xmult, card.ability.extra.chips_bonus, card.ability.extra.mult_bonus, card.ability.extra.dollar_bonus } }
     end,
     in_pool = function(self, args) 
         return false
@@ -51,6 +51,9 @@ local jokerInfo = {
                 }
             end
         end
+    end,
+    set_badges = function(self, card, badges)
+        badges[#badges+1] = create_badge(localize('k_badge_mischief'), G.C.PURPLE, G.C.WHITE, 1)
     end
 }
 return jokerInfo

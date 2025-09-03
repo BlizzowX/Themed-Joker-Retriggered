@@ -11,6 +11,12 @@ SMODS.ObjectType({
 })
 
 SMODS.ObjectType({
+    key = "tjr_pool_jurassic",
+    default = "j_tjr_ju_dinosauregg",
+    cards = {    },
+})
+
+SMODS.ObjectType({
     key = "tjr_pool_dinosauregg",
     default = "j_tjr_ju_fossil_egg",
     cards = {    },
@@ -25,6 +31,12 @@ SMODS.ObjectType({
 SMODS.ObjectType({
     key = "tjr_pool_infected",
     default = "j_tjr_in_joker",
+    cards = {    },
+})
+
+SMODS.ObjectType({
+    key = "tjr_pool_combat_ace",
+    default = "j_tjr_ca_soldier",
     cards = {    },
 })
 

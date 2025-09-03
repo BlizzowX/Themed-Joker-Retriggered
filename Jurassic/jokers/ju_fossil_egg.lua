@@ -7,7 +7,7 @@ local jokerInfo = {
     unlocked = true,
     discovered = true,
     blueprint_compat = true,
-    pools = { ['tjr_pool_dinosauregg'] = true },
+    pools = { ['tjr_pool_dinosauregg'] = true, ['tjr_pool_jurassic'] = true },
     config = {extra = {dollars = 3}},
     loc_vars = function(self, info_queue, card)        
         info_queue[#info_queue+1] = G.P_CENTERS.m_stone
@@ -16,14 +16,17 @@ local jokerInfo = {
     in_pool = function(self, args) 
         return false
     end,
-    calculate = function(self, card, context)      
-        if context.individual and context.cardarea == G.play then
-            if SMODS.has_enhancement(context.other_card, 'm_stone') then
-                return {
-                    dollars = card.ability.extra.dollars
-                }
-            end
-        end
-    end    
-}
-return jokerInfo
+         calculate = function(self, card, context)      
+         if context.individual and context.cardarea == G.play then
+             if SMODS.has_enhancement(context.other_card, 'm_stone') then
+                 return {
+                     dollars = card.ability.extra.dollars
+                 }
+             end
+         end
+     end,
+     set_badges = function(self, card, badges)
+         badges[#badges+1] = create_badge(localize('k_badge_jurassic'), G.C.GREEN, G.C.WHITE, 1)
+     end
+ }
+ return jokerInfo

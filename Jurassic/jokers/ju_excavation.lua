@@ -8,6 +8,7 @@ local jokerInfo = {
     discovered = true,
     blueprint_compat = true,
     config = {},
+    pools = { ['tjr_pool_jurassic'] = true},
     
     loc_vars = function(self, info_queue, card)
         info_queue[#info_queue+1] = G.P_CENTERS.m_stone
@@ -38,11 +39,14 @@ local jokerInfo = {
                         end
                     }))
                 end
-                return {
-                    message = "Excavation complete!"
-                }
-            end
-        end
-    end    
-}
-return jokerInfo
+                                 return {
+                     message = "Excavation complete!"
+                 }
+             end
+         end
+     end,
+     set_badges = function(self, card, badges)
+         badges[#badges+1] = create_badge(localize('k_badge_jurassic'), G.C.GREEN, G.C.WHITE, 1)
+     end
+ }
+ return jokerInfo

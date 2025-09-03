@@ -68,7 +68,6 @@ changerank = function(card, seed, rank)
         local new_rank = pseudorandom_element(SMODS.Ranks, pseudoseed(rank_seed)).key
         rank = new_rank
     end        
-    sendDebugMessage('CHANGERANK ' .. rank)
     SMODS.change_base(card, nil, rank)
 
     G.E_MANAGER:add_event(Event({

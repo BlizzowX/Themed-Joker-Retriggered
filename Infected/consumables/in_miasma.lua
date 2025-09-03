@@ -2,7 +2,7 @@ local consumableInfo = {
     key = 'in_miasma',
     set = 'Spectral',
     atlas = 'ThemedJokersRetriggered_spectrals',
-    pos = { x = 0, y = 0 },
+    pos = { x = 0, y = 2 },
     unlocked = true,
     discovered = true,
     config = {},

@@ -8,6 +8,7 @@ local jokerInfo = {
     discovered = true,
     blueprint_compat = true,
     config =  {extra={xmult=1.5, cost=6}},  
+    pools = { ['tjr_pool_combat_ace'] = true},
     loc_vars = function(self, info_queue, card)
         
         return { vars = { card.ability.extra.xmult, card.ability.extra.cost } }
@@ -33,6 +34,9 @@ local jokerInfo = {
                 SMODS.destroy_cards(card)
             end 
         end
+    end,
+    set_badges = function(self, card, badges)
+        badges[#badges+1] = create_badge(localize('k_badge_ca'), G.C.GREEN, G.C.WHITE, 1)
     end
 }
 return jokerInfo

@@ -27,6 +27,9 @@ local jokerInfo = {
             mult = card.ability.extra.mult
         }
         end
+    end,
+    set_badges = function(self, card, badges)
+        badges[#badges+1] = create_badge(localize('k_badge_infected'), G.C.GREEN, G.C.RED, 1)
     end
 }
 return jokerInfo

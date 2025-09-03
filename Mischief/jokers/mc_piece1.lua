@@ -50,6 +50,9 @@ local jokerInfo = {
         else
             G.GAME.pool_flags.tjr_mischief_pieces=1
         end
+    end,
+    set_badges = function(self, card, badges)
+        badges[#badges+1] = create_badge(localize('k_badge_mischief'), G.C.PURPLE, G.C.WHITE, 1)
     end
 }
 return jokerInfo
