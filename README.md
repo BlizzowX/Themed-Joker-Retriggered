@@ -11,7 +11,7 @@ Join the Combat Aces on the battlefield.
 Recruit Aces to your deck and increase their strenght my promoting them.
 - 7 Jokers (3 Common, 2 Uncommon, 2 Rare)
 - 1 Tarot Card
-- 1 Deck (Back)
+- 1 Deck
 - 1 Blind
 
 ### Infected
@@ -20,7 +20,7 @@ Use Infected Cards in special pokerhands to unleash their full potential.
 - 9 Jokers (2 Common, 4 Uncommon, 2 Rare, 1 Legendary)
 - 1 Spectral Card
 - 1 Tarot Card
-- 1 Deck (Back)
+- 1 Deck
 - 1 Enhancement
 - 5 Poker Hands
 
@@ -30,7 +30,7 @@ Use Dinosaurs to beat the blinds. Harness their power when they get extinct agai
 - 13 Jokers (2 Common, 8 Uncommon, 3 Rare)
 - 1 Spectral Card
 - 1 Tarot Card
-- 1 Deck (Back)
+- 1 Deck
 
 ### Mischief
 ???
