@@ -37,3 +37,8 @@ Use Dinosaurs to beat the blinds. Harness their power when they get extinct agai
 - 6 Jokers (5 Common, 1 Legendary)
 - 1 Tarot Card
 - 2 Vouchers
+
+### Sacred Suits *WIP
+The four sacred suits, each with their own guardian.
+Convert cards to your chosen suit with mystical powers.
+- 4 Jokers (4 Common)

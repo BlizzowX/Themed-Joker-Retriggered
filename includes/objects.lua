@@ -45,3 +45,9 @@ SMODS.ObjectType({
     default = "j_tjr_mc_cultist",
     cards = {    },
 })
+
+SMODS.ObjectType({
+    key = "tjr_pool_sacred_suits",
+    default = "j_tjr_ss_shaman_spades",
+    cards = {    },
+})

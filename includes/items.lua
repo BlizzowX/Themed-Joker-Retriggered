@@ -90,6 +90,26 @@ local themeItems = {
             'mc_ritual',
             'mc_awakening',
         },
+    },
+    ["Sacred Suits"] = {
+        Back = {
+        },
+        Blind = {
+        },
+        Consumable = {
+        },
+        Enhancement = {
+        },
+        Joker = {
+            'ss_shaman_spades',
+            'ss_druid_diamonds',
+            'ss_monk_clubs',
+            'ss_priest_hearts',
+        },
+        Pokerhand = {
+        },
+        Voucher = {
+        },
     }
 }
 

@@ -145,7 +145,7 @@ return {
                 text = {
                     "{X:mult,C:white} X#1# {} Mult for each",
                     "remaining {C:attention}Ace{} in Deck",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {} Mult)"
+                    "{C:inactive}(Currently {X:mult,C:white} X#2# {} {C:inactive}Mult){}"
                 }    
             },
             j_tjr_ca_veteran={
@@ -184,7 +184,7 @@ return {
                     "and {C:attention}Stone Card{}.",
                     "{C:green}#3# in #4#{} chance to go extinct",
                     "at the end of round.",
-                    "{C:inactive}(Currently {C:chips}+#2#{} Chips){}"
+                    "{C:inactive}(Currently {C:chips}+#2#{} {C:inactive}Chips){}"
                 }                               
             },
             j_tjr_ju_brachiosaurus={
@@ -194,7 +194,7 @@ return {
                     "{C:attention}Stone Card{} in your full deck.",
                     "{C:green}#3# in #4#{} chance to go extinct",
                     "at the end of round.",
-                    "{C:inactive}(Currently {C:mult}#2#{} Mult){}"
+                    "{C:inactive}(Currently {C:mult}#2# {} {C:inactive}Mult){}"
                 }                               
             },
             j_tjr_ju_fossil_quetz={
@@ -245,7 +245,7 @@ return {
                 text = {
                     "Earn {C:money}$#1#{} for each {C:attention}Stone Card{}",
                     "in your full deck at the end of round",
-                    "{C:inactive}(Currently {C:money}$#2#){}"
+                    "{C:inactive}(Currently {C:money}$#2#{}{C:inactive}){}"
                 }                               
             },
             j_tjr_ju_dinosauregg = {
@@ -307,7 +307,7 @@ return {
                     "Gives {X:mult,C:white}X#1#{} Mult.",
                     "for each {C:green}Infected Card{}",
                     "in your full deck",
-                    "{C:inactive}(Currently {X:mult,C:white}X#2#{} Mult)"
+                    "{C:inactive}(Currently {X:mult,C:white}X#2#{} {C:inactive}Mult){}"
                 }
             },
             j_tjr_in_corruptedjoker={
@@ -367,7 +367,7 @@ return {
                 text = {
                     "Gives {X:mult,C:white}X#1#{} Mult",
                     "for each collected {C:attention}Piece of The Mischievous One{}",
-                    "{C:inactive}(Currently {X:mult,C:white}X#2#{} Mult){}"
+                    "{C:inactive}(Currently {X:mult,C:white}X#2#{} {C:inactive}Mult){}"
                 }
             },
             j_tjr_mc_jimbo={
@@ -377,6 +377,35 @@ return {
                   "Played cards either permanently gain",
                   "{C:chips}+#2#{} Chips, {C:mult}+#3#{} Mult,",
                   "{C:money}$#4#{} or nothing when scored."
+                }
+            },
+            j_tjr_ss_shaman_spades={
+                name = "Shaman of Spades",
+                text = {
+                    "{C:green}#2# in #3#{} chance to change",
+                    "the suit of played cards to {C:spades}#1#{}",
+                    
+                }
+            },
+            j_tjr_ss_druid_diamonds={
+                name = "Druid of Diamonds",
+                text = {
+                    "{C:green}#2# in #3#{} chance to change",
+                    "the suit of played cards to {C:diamonds}#1#{}"
+                }
+            },
+            j_tjr_ss_monk_clubs={
+                name = "Monk of Clubs",
+                text = {
+                    "{C:green}#2# in #3#{} chance to change",
+                    "the suit of played cards to {C:clubs}#1#{}"
+                }
+            },
+            j_tjr_ss_priest_hearts={
+                name = "Priest of Hearts",
+                text = {
+                    "{C:green}#2# in #3#{} chance to change",
+                    "the suit of played cards to {C:hearts}#1#{}"
                 }
             }
         },
@@ -463,6 +492,7 @@ return {
         k_badge_infected = "Infected",
         k_badge_jurassic = "Jurassic",
         k_badge_mischief = "Mischief",
+        k_badge_sacred_suits = "Sacred Suits",
             k_supplies_up = "+ Supplies!",
             k_supplydrop = "Supply drop!",
             k_mercenary_destroy = "Ciao!",
@@ -480,6 +510,7 @@ return {
             k_infected_spread = "It's spreading!",
             k_potency_level_up = "Potency up!",
             k_mischief_piece_add = "Piece collected!",
+            k_wololo = "Wololo!",
         },
 
         poker_hand_descriptions = {

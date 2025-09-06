@@ -25,6 +25,9 @@ local consumableInfo = {
         
     can_use = function(self, card)
         return G.jokers and #G.jokers.cards < G.jokers.config.card_limit
+    end,
+    set_badges = function(self, card, badges)
+        badges[#badges+1] = create_badge(localize('k_badge_infected'), G.C.GREEN, G.C.WHITE, 1)
     end
 }
 

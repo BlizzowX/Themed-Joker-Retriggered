@@ -66,3 +66,8 @@ SMODS.Sound{
     key = 'clown_laugh_short',
     path = 'clown_laugh_short.ogg'
 }
+
+SMODS.Sound{
+    key = 'wololo',
+    path = 'wololo.ogg'
+}

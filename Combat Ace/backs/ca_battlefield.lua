@@ -5,8 +5,6 @@ local backInfo = {
     unlocked = true,
     discovered = true,
     config = { consumables = {'c_tjr_ca_contract'}, jokers = {'j_tjr_ca_recruiter'}},
-    set_badges = function(self, card, badges)
-        badges[#badges+1] = create_badge(localize('k_badge_ca'), G.C.GREEN, G.C.WHITE, 1)
     end
 }
 
