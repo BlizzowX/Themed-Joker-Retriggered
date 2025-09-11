@@ -51,3 +51,27 @@ SMODS.ObjectType({
     default = "j_tjr_ss_shaman_spades",
     cards = {    },
 })
+
+SMODS.ObjectType({
+    key = "tjr_pool_sacred_spades",
+    default = "j_tjr_ss_shaman_spades",
+    cards = {    },
+})
+
+SMODS.ObjectType({
+    key = "tjr_pool_sacred_hearts",
+    default = "j_tjr_ss_priest_hearts",
+    cards = {    },
+})
+
+SMODS.ObjectType({
+    key = "tjr_pool_sacred_clubs",
+    default = "j_tjr_ss_monk_clubs",
+    cards = {    },
+})
+
+SMODS.ObjectType({
+    key = "tjr_pool_sacred_diamonds",
+    default = "j_tjr_ss_druid_diamonds",
+    cards = {    },
+})

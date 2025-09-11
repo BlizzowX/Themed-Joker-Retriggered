@@ -61,6 +61,14 @@ return {
                 text = {
                     "Turn one {C:attention}Jurassic Dinosaur{} into its {C:attention}Fossil{}"
                 }
+            },
+            c_tjr_ss_vessel={
+                name = "Vessel",
+                text = {
+                    "Converts up to 5 random cards",
+                    "into the most common suit in deck.",
+                    "{C:inactive}(Currently {C:#1#}#1#{}){}"
+                }
             }
         },
         Tarot={
@@ -94,6 +102,34 @@ return {
                     "Creates a random {C:attention}Mischief{} {C:attention}Joker{}",
                     "{C:inactive}(Must have room){}"
 
+                }
+            },
+            c_tjr_ss_devotion_spades={
+                name = "The Devotee",
+                text = {
+                    "Creates a random {C:spades}Sacred Suit{} {C:attention}Joker{}",
+                    "{C:inactive}(Must have room){}"
+                }
+            },
+            c_tjr_ss_devotion_hearts={
+                name = "The Devotee",
+                text = {
+                    "Creates a random {C:hearts}Sacred Suit{} {C:attention}Joker{}",
+                    "{C:inactive}(Must have room){}"
+                }
+            },
+            c_tjr_ss_devotion_clubs={
+                name = "The Devotee",
+                text = {
+                    "Creates a random {C:clubs}Sacred Suit{} {C:attention}Joker{}",
+                    "{C:inactive}(Must have room){}"
+                }
+            },
+            c_tjr_ss_devotion_diamonds={
+                name = "The Devotee",
+                text = {
+                    "Creates a random {C:diamonds}Sacred Suit{} {C:attention}Joker{}",
+                    "{C:inactive}(Must have room){}"
                 }
             }
         },
@@ -406,6 +442,106 @@ return {
                 text = {
                     "{C:green}#2# in #3#{} chance to change",
                     "the suit of played cards to {C:hearts}#1#{}"
+                }
+            },
+            j_tjr_ss_cathedral={
+                name = "Cathedral",
+                text = {
+                    "{X:mult,C:white}x#1#{} Mult for every {C:hearts}Heart{}",
+                    "in full deck if played hand is",
+                    "a {C:hearts}Hearts Flush{}",
+                    "{C:inactive}(Currently {X:mult,C:white}X#2#{} {C:inactive}Mult){}"
+                }
+            },
+            j_tjr_ss_monastery={
+                name = "Monastery",
+                text = {
+                    "{X:mult,C:white}x#1#{} Mult for every {C:clubs}Club{}",
+                    "in full deck if played hand is",
+                    "a {C:clubs}Clubs Flush{}",
+                    "{C:inactive}(Currently {X:mult,C:white}X#2#{} {C:inactive}Mult){}"
+                }
+            },
+            j_tjr_ss_bone_temple={
+                name = "Bone Temple",
+                text = {
+                    "{X:mult,C:white}x#1#{} Mult for every {C:spades}Spade{}",
+                    "in full deck if played hand is",
+                    "a {C:spades}Spades Flush{}",
+                    "{C:inactive}(Currently {X:mult,C:white}X#2#{} {C:inactive}Mult){}"
+                }
+            },
+            j_tjr_ss_stone_circle={
+                name = "Stone Circle",
+                text = {
+                    "{X:mult,C:white}x#1#{} Mult for every {C:diamonds}Diamond{}",
+                    "in full deck if played hand is",
+                    "a {C:diamonds}Diamonds Flush{}",
+                    "{C:inactive}(Currently {X:mult,C:white}X#2#{} {C:inactive}Mult){}"
+                }
+            },
+            j_tjr_ss_staff_diamonds={
+                name = "Staff of Diamonds",
+                text = {
+                    "Scored {C:diamonds}Diamonds{} gain",
+                    "{C:chips}+#1#{} Chips permanently",
+                    "Held {C:diamonds}Diamonds{} gain",
+                    "{C:mult}+#2#{} Mult permanently"
+                }
+            },
+            j_tjr_ss_rosary_hearts={
+                name = "Rosary of Hearts",
+                text = {
+                    "Scored {C:hearts}Hearts{} gain",
+                    "{C:mult}+#1#{} Mult permanently",
+                    "Held {C:hearts}Hearts{} gain",
+                    "{C:chips}+#2#{} Chips permanently"
+                }
+            },
+            j_tjr_ss_dagger_spades={
+                name = "Dagger of Spades",
+                text = {
+                    "Scored {C:spades}Spades{} gain",
+                    "{C:chips}+#1#{} Chips permanently",
+                    "Held {C:spades}Spades{} gain",
+                    "{C:chips}+#2#{} Chips permanently"
+                }
+            },
+            j_tjr_ss_mala_clubs={
+                name = "Mala of Clubs",
+                text = {
+                    "Scored {C:clubs}Clubs{} gain",
+                    "{C:mult}+#1#{} Mult permanently",
+                    "Held {C:clubs}Clubs{} gain",
+                    "{C:mult}+#2#{} Mult permanently"
+                }
+            },
+            j_tjr_ss_aspect_passion={
+                name = "Aspect of Passion",
+                text = {
+                    "Retrigger all {C:hearts}Hearts{}",
+                    "{C:attention}#1#{} additional times"
+                }
+            },
+            j_tjr_ss_aspect_balance={
+                name = "Aspect of Balance",
+                text = {
+                    "Retrigger all {C:clubs}Clubs{}",
+                    "{C:attention}#1#{} additional times"
+                }
+            },
+            j_tjr_ss_aspect_silence={
+                name = "Aspect of Silence",
+                text = {
+                    "Retrigger all {C:spades}Spades{}",
+                    "{C:attention}#1#{} additional times"
+                }
+            },
+            j_tjr_ss_aspect_growth={
+                name = "Aspect of Growth",
+                text = {
+                    "Retrigger all {C:diamonds}Diamonds{}",
+                    "{C:attention}#1#{} additional times"
                 }
             }
         },

@@ -97,6 +97,11 @@ local themeItems = {
         Blind = {
         },
         Consumable = {
+            'ss_devotion_spades',
+            'ss_devotion_hearts',
+            'ss_devotion_clubs',
+            'ss_devotion_diamonds',
+            'ss_vessel',
         },
         Enhancement = {
         },
@@ -105,6 +110,18 @@ local themeItems = {
             'ss_druid_diamonds',
             'ss_monk_clubs',
             'ss_priest_hearts',
+            'ss_cathedral',
+            'ss_monastery',
+            'ss_bone_temple',
+            'ss_stone_circle',
+            'ss_staff_diamonds',
+            'ss_rosary_hearts',
+            'ss_dagger_spades',
+            'ss_mala_clubs',
+            'ss_aspect_silence',
+            'ss_aspect_growth',
+            'ss_aspect_balance',
+            'ss_aspect_passion',
         },
         Pokerhand = {
         },

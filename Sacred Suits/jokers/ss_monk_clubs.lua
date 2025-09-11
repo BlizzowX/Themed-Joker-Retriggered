@@ -7,7 +7,7 @@ local jokerInfo = {
     unlocked = true,
     discovered = true,
     blueprint_compat = true,
-    pools = { ['tjr_pool_sacred_suits'] = true},
+    pools = { ['tjr_pool_sacred_suits'] = true, ['tjr_pool_sacred_clubs'] = true},
     config = {extra = {suit = "Clubs", odds = 4}},
     loc_vars = function(self, info_queue, card)
         local numerator, denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'tjr_wololo' .. G.GAME.round_resets.ante)
